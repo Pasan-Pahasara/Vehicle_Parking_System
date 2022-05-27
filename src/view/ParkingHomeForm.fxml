@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ParkingHomeContext" prefHeight="604.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingHomeFormController">
+   <children>
+      <AnchorPane fx:id="ParkingHomeMoveContext" prefHeight="604.0" prefWidth="1055.0" />
+      <ImageView fitHeight="604.0" fitWidth="1055.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Parking_Background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-1.0" prefHeight="604.0" prefWidth="1055.0" style="-fx-background-color: #2c3e50; -fx-opacity: 7%;">
+         <effect>
+            <DropShadow height="118.64" radius="52.91" width="95.0" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="67.0" layoutY="75.0" text="SAMAN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="67.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="67.0" layoutY="238.0" prefHeight="65.0" prefWidth="286.0" text="DESTRIBUTES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <AnchorPane layoutX="59.0" layoutY="354.0" opacity="0.7" prefHeight="200.0" prefWidth="298.0" style="-fx-background-color: #34495E; -fx-background-radius: 25;">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="51.0" prefWidth="286.0" style="-fx-background-color: black; -fx-background-radius: 25;" />
+            <Label layoutX="24.0" layoutY="16.0" text="Your Parking Slot Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <AnchorPane layoutX="104.0" layoutY="83.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: white; -fx-opacity: 35%;" />
+         </children>
+         <effect>
+            <InnerShadow choke="0.39" radius="15.4425" width="42.77" />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="txtParkingSlot" alignment="CENTER" editable="false" layoutX="163.0" layoutY="435.0" prefHeight="90.0" prefWidth="90.0" unFocusColor="WHITE">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="61.0" layoutY="114.0" prefHeight="151.0" prefWidth="267.0" text="RICE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="120.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <AnchorPane layoutX="537.0" layoutY="176.0" opacity="0.7" prefHeight="200.0" prefWidth="391.0" style="-fx-background-color: #34495E; -fx-background-radius: 25;">
+         <effect>
+            <InnerShadow choke="0.39" radius="15.4425" width="42.77" />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="txtVehicleType" editable="false" layoutX="698.0" layoutY="248.0" prefHeight="31.0" prefWidth="193.0" style="-fx-background-color: white; -fx-background-radius: 7; -fx-opacity: 65%;">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </JFXTextField>
+      <AnchorPane layoutX="797.0" layoutY="43.0" prefHeight="70.0" prefWidth="222.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 35%;">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </AnchorPane>
+      <Text fx:id="label2" boundsType="VISUAL" fontSmoothingType="LCD" layoutX="880.0" layoutY="93.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="15.0" wrappingWidth="450.0000010728836">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow height="126.73" radius="48.8725" width="70.76" />
+         </effect>
+      </Text>
+      <Text fx:id="label3" boundsType="VISUAL" fontSmoothingType="LCD" layoutX="815.0" layoutY="72.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="87.99999421834946">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow height="126.73" radius="48.8725" width="70.76" />
+         </effect>
+      </Text>
+      <AnchorPane layoutX="698.0" layoutY="295.0" prefHeight="31.0" prefWidth="193.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 65%;" />
+      <JFXComboBox fx:id="cmbDriver" layoutX="709.0" layoutY="293.0" prefHeight="31.0" prefWidth="176.0" />
+      <Label layoutX="493.0" layoutY="579.0" text="Version 1.1.2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Separator layoutX="16.0" layoutY="590.0" prefHeight="2.0" prefWidth="464.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Separator>
+      <Separator layoutX="594.0" layoutY="590.0" prefHeight="2.0" prefWidth="445.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Separator>
+      <AnchorPane layoutX="534.0" layoutY="394.0" prefHeight="81.0" prefWidth="472.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 35%;">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="782.0" layoutY="411.0" opacity="0.7" prefHeight="51.0" prefWidth="208.0" style="-fx-background-color: black; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="17.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/On_Delivery_Shift.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="843.0" layoutY="426.0" text="On Delivery Shift" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="547.0" layoutY="411.0" opacity="0.7" prefHeight="51.0" prefWidth="208.0" style="-fx-background-color: black; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="20.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Park_Vehicle.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="621.0" layoutY="427.0" text="Park Vehicle " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="645.0" layoutY="496.0" opacity="0.7" prefHeight="70.0" prefWidth="267.0" style="-fx-background-color: #30336b; -fx-background-radius: 25;">
+         <effect>
+            <InnerShadow height="131.2" radius="66.5075" width="136.83">
+               <input>
+                  <DropShadow height="126.73" radius="64.42" width="132.95" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+      <Label layoutX="710.0" layoutY="520.0" prefWidth="179.0" text="Management Log in" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="33.0" layoutX="664.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/management_Log_in.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnDelivery" buttonType="RAISED" layoutX="782.0" layoutY="411.0" onAction="#deliveryShiftOnAction" prefHeight="51.0" prefWidth="208.0" style="-fx-background-radius: 25;" text="." textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="645.0" layoutY="494.0" onAction="#managementLoginOnAction" prefHeight="70.0" prefWidth="267.0" style="-fx-background-radius: 25;" text="." textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnPark" buttonType="RAISED" layoutX="547.0" layoutY="411.0" onAction="#parkOnAction" prefHeight="51.0" prefWidth="208.0" style="-fx-background-radius: 25; -fx-padding: 10;" text="." textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="568.0" layoutY="201.0" text="Select Vehicle" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="250.0" text="Vehicle Type" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="632.0" layoutY="296.0" text="Driver" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="699.0" layoutY="201.0" prefHeight="31.0" prefWidth="193.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 65%;" />
+      <JFXComboBox fx:id="cmbVehicle" layoutX="710.0" layoutY="199.0" prefHeight="31.0" prefWidth="176.0" />
+      <AnchorPane layoutX="24.0" layoutY="23.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 35%;">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="29.0" layoutY="29.0" opacity="0.82" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #30336b; -fx-background-radius: 25;">
+         <effect>
+            <InnerShadow height="131.2" radius="66.5075" width="136.83">
+               <input>
+                  <DropShadow height="126.73" radius="64.42" width="132.95" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="37.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Refresh.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="29.0" onAction="#refreshOnAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 25;" text="." />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryFormController">
+   <children>
+      <TableView fx:id="tblOnDelivery" opacity="0.9" prefHeight="351.0" prefWidth="855.0">
+         <columns>
+            <TableColumn fx:id="colNo" prefWidth="190.0" text="Vehicle Number" />
+            <TableColumn fx:id="colType" minWidth="0.0" prefWidth="200.0" text="Vehicle Type" />
+            <TableColumn fx:id="colName" prefWidth="251.0" text="Driver Name" />
+            <TableColumn fx:id="colLeftTime" prefWidth="213.0" text="Left Time" />
+         </columns>
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" top="75.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>

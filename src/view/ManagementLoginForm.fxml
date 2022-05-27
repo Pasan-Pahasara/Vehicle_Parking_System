@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagementLogInContext" prefHeight="344.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLoginFormController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="555.0" style="-fx-background-color: #282A35;">
+         <children>
+            <FontAwesomeIconView fill="#fe5154" glyphName="CIRCLE" onMouseClicked="#close" size="15.0" text="">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="1.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#fcbf43" glyphName="CIRCLE" onMouseClicked="#max" size="15.0" strokeMiterLimit="19.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="1.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#19d04b" glyphName="CIRCLE" onMouseClicked="#min" size="15.0" strokeWidth="0.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="1.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+      <AnchorPane layoutY="39.0" opacity="0.91" prefHeight="305.0" prefWidth="555.0" style="-fx-background-color: #282A35;">
+         <effect>
+            <GaussianBlur radius="19.69" />
+         </effect></AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="111.0" opacity="0.09" prefHeight="170.0" prefWidth="435.0" style="-fx-background-color: #34495E; -fx-background-radius: 25;">
+         <effect>
+            <InnerShadow choke="0.39" radius="15.4425" width="42.77" />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="77.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Room_Reservation/src/assets/user_icon.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="81.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Room_Reservation/src/assets/password_icon.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="127.0" layoutY="154.0" onKeyPressed="#usernameEnterPress" prefHeight="31.0" prefWidth="338.0" promptText="User Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" />
+         </effect>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="129.0" layoutY="211.0" onKeyPressed="#enterKeyPressed" prefHeight="31.0" prefWidth="338.0" promptText="Password" unFocusColor="WHITE">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0">
+               <input>
+                  <DropShadow height="231.0" radius="121.0" width="255.0" />
+               </input>
+            </ColorAdjust>
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <AnchorPane layoutX="240.0" layoutY="66.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="247.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Admin_icon.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnCancel" alignment="CENTER" buttonType="RAISED" cancelButton="true" layoutX="307.0" layoutY="287.0" onAction="#cancelOnAction" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: fe5154; -fx-background-radius: 8;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow radius="7.25" width="10.0">
+               <input>
+                  <InnerShadow choke="0.11" radius="16.997500000000002" width="48.99" />
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="421.0" layoutY="287.0" onAction="#loginOnAction" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #19d04b; -fx-background-radius: 8;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <Label fx:id="managementLabel" layoutX="134.0" layoutY="252.0" prefHeight="21.0" prefWidth="313.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="managementLabel1" layoutX="93.0" layoutY="8.0" prefHeight="21.0" prefWidth="46.0" text="LogIn" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHide" layoutX="445.0" layoutY="216.0" onMousePressed="#showPassword" onMouseReleased="#hidePassword" prefHeight="21.0" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/noHide.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePageContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="604.0" prefWidth="1055.0" style="-fx-background-color: #2c3e50; -fx-opacity: 80%;">
+         <effect>
+            <DropShadow height="118.64" radius="52.91" width="95.0" />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="604.0" fitWidth="1055.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Parking_Background.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="5.5" />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="118.0" prefWidth="1055.0" style="-fx-background-color: #282A35;">
+         <effect>
+            <InnerShadow choke="0.18" height="232.27" radius="121.3175" width="255.0">
+               <input>
+                  <MotionBlur angle="87.81" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="49.0" layoutY="219.0" prefHeight="230.0" prefWidth="961.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 35%;">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="122.0" layoutY="212.0" text="SAMAN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="67.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="122.0" layoutY="375.0" prefHeight="65.0" prefWidth="286.0" text="DESTRIBUTES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="116.0" layoutY="251.0" prefHeight="151.0" prefWidth="267.0" text="RICE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="120.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="423.0" layoutY="249.0" prefHeight="65.0" prefWidth="554.0" text="VEHICLE PARKING">
+         <font>
+            <Font name="System Bold" size="63.0" />
+         </font>
+         <effect>
+            <DropShadow height="255.0" radius="69.2775" width="24.11" />
+         </effect>
+      </Label>
+      <Label layoutX="560.0" layoutY="327.0" prefHeight="92.0" prefWidth="249.0" text="SYSTEM">
+         <font>
+            <Font name="System Bold" size="63.0" />
+         </font>
+         <effect>
+            <DropShadow height="61.43" radius="24.7725" width="39.66" />
+         </effect>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="520.0" layoutY="32.0" onAction="#addVehiclesOnAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Add Vehicles" textFill="#f2eeee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbOptions" layoutX="41.0" layoutY="35.0" prefHeight="31.0" prefWidth="185.0" promptText="Select Option">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="697.0" layoutY="32.0" onAction="#addDriverOnAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #17ae60; -fx-background-radius: 20;" text="Add Drivers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="874.0" layoutY="32.0" onAction="#logOutOnAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #fe5154; -fx-background-radius: 20;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="windowNavigateContext" layoutY="118.0" prefHeight="487.0" prefWidth="1055.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+   </children>
+</AnchorPane>

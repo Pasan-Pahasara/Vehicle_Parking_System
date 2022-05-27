@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootContext" prefHeight="227.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <ImageView fitHeight="369.0" fitWidth="666.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Parking_Background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="606.0" layoutY="24.0" prefHeight="78.0" prefWidth="38.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 60%;">
+         <effect>
+            <GaussianBlur radius="23.06">
+               <input>
+                  <InnerShadow choke="0.45">
+                     <input>
+                        <DropShadow height="255.0" radius="127.0" width="255.0" />
+                     </input>
+                  </InnerShadow>
+               </input>
+            </GaussianBlur>
+         </effect>
+      </AnchorPane>
+      <ProgressIndicator fx:id="progressRange" layoutX="606.0" layoutY="24.0" prefHeight="52.0" prefWidth="38.0" progress="0.0" />
+      <JFXProgressBar fx:id="progressBar" layoutX="17.0" layoutY="344.0" prefHeight="8.0" prefWidth="623.0" />
+      <AnchorPane layoutX="47.0" layoutY="99.0" prefHeight="190.0" prefWidth="573.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-opacity: 45%;">
+         <effect>
+            <GaussianBlur radius="23.06">
+               <input>
+                  <InnerShadow choke="0.45">
+                     <input>
+                        <DropShadow height="255.0" radius="127.0" width="255.0" />
+                     </input>
+                  </InnerShadow>
+               </input>
+            </GaussianBlur>
+         </effect>
+      </AnchorPane>
+      <Label layoutX="65.0" layoutY="104.0" prefHeight="65.0" prefWidth="554.0" text="VEHICLE PARKING">
+         <font>
+            <Font name="System Bold" size="63.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="63.25" width="255.0">
+               <input>
+                  <InnerShadow choke="0.7" radius="36.432500000000005" width="126.73" />
+               </input></DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="202.0" layoutY="182.0" prefHeight="92.0" prefWidth="249.0" text="SYSTEM">
+         <font>
+            <Font name="System Bold" size="63.0" />
+         </font>
+         <effect>
+            <DropShadow height="112.75" radius="53.1525" width="101.86">
+               <input>
+                  <InnerShadow />
+               </input></DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

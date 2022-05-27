@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="650.0" style="-fx-background-color: #282A35;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="19.0" opacity="0.7" prefHeight="257.0" prefWidth="606.0" style="-fx-background-color: #34495E; -fx-background-radius: 25;">
+         <effect>
+            <InnerShadow choke="0.39" radius="15.4425" width="42.77" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="39.0" layoutY="45.0" prefHeight="27.0" prefWidth="95.0" text="Vehicle No" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="96.0" prefHeight="27.0" prefWidth="161.0" text="Maximum Weight" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="147.0" prefHeight="27.0" prefWidth="152.0" text="No Of Passengers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddVehicle" alignment="CENTER" buttonType="RAISED" layoutX="459.0" layoutY="210.0" onAction="#addVehicleOnAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: linear-gradient(to left top, #1a037b, #1e218c, #25369c, #2e4baa, #3b5fb8, #3f71c4, #4783cf, #5394d9, #5ba7e4, #69baee, #7bcdf7, #90dfff); -fx-background-radius: 15;" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="vehicleLabel1" layoutX="226.0" layoutY="50.0" prefHeight="21.0" prefWidth="108.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="vehicleLabel2" layoutX="226.0" layoutY="98.0" prefHeight="21.0" prefWidth="193.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="vehicleLabel3" layoutX="226.0" layoutY="153.0" prefHeight="21.0" prefWidth="193.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleNo" layoutX="226.0" layoutY="42.0" onAction="#moveToTypeOnAction" onKeyReleased="#checkingVehicleNo" prefHeight="31.0" prefWidth="108.0">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+         </effect></JFXTextField>
+      <JFXComboBox fx:id="vehicleCmb" layoutX="367.0" layoutY="36.0" onAction="#moveToWeightOnAction" prefHeight="37.0" prefWidth="231.0" promptText="Select Vehicle Type">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXComboBox>
+      <JFXTextField fx:id="txtMaxWeight" layoutX="226.0" layoutY="91.0" onAction="#moveToPassengerOnAction" onKeyReleased="#checkingWeight" prefHeight="31.0" prefWidth="108.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextField>
+      <JFXTextField fx:id="txtNoOfPassengers" layoutX="227.0" layoutY="145.0" onKeyPressed="#enterAddVehicle" onKeyReleased="#checkingPassengers" prefHeight="31.0" prefWidth="108.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextField>
+      <JFXButton fx:id="btnViewDetails" alignment="CENTER" buttonType="RAISED" layoutX="290.0" layoutY="210.0" onAction="#viewDetailsOnAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: linear-gradient(to left top, #680c32, #6f1a3d, #772649, #7d3054, #843b60, #8f486d, #9a567b, #a56388, #b7779b, #ca8caf, #dca1c3, #efb6d7); -fx-background-radius: 15;" text="View Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+   <rotationAxis>
+      <Point3D y="100.0" z="1.0" />
+   </rotationAxis>
+</AnchorPane>

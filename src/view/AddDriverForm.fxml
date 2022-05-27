@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addDriverContext" prefHeight="371.0" prefWidth="650.0" style="-fx-background-color: #282A35;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <AnchorPane layoutX="30.0" layoutY="26.0" opacity="0.7" prefHeight="319.0" prefWidth="590.0" style="-fx-background-color: #34495E; -fx-background-radius: 25;">
+         <effect>
+            <InnerShadow choke="0.39" radius="15.4425" width="42.77" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="99.0" layoutY="46.0" text="Driver Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="86.0" text="NIC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="125.0" text="Driving License No" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="162.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="235.0" text="Contact No" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="driverLabel1" layoutX="247.0" layoutY="43.0" prefHeight="21.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="driverLabel2" layoutX="248.0" layoutY="86.0" prefHeight="21.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="driverLabel3" layoutX="248.0" layoutY="128.0" prefHeight="21.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="driverLabel4" layoutX="248.0" layoutY="239.0" prefHeight="21.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDriverName" layoutX="248.0" layoutY="36.0" onAction="#moveToNicOnAction" onKeyReleased="#checkingDriverName" prefHeight="31.0" prefWidth="322.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextField>
+      <JFXTextField fx:id="txtNic" layoutX="248.0" layoutY="77.0" onAction="#moveToLicenseNoOnAction" onKeyReleased="#checkingNIC" prefHeight="31.0" prefWidth="322.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextField>
+      <JFXTextField fx:id="txtLicenseNo" layoutX="248.0" layoutY="118.0" onAction="#moveToAddressOnAction" onKeyReleased="#checkingDrivingLicense" prefHeight="31.0" prefWidth="322.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextField>
+      <JFXTextArea fx:id="txtAddress" layoutX="248.0" layoutY="165.0" onDragDetected="#moveToContactOnAction" prefHeight="56.0" prefWidth="322.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextArea>
+      <JFXTextField fx:id="txtContact" layoutX="248.0" layoutY="229.0" onKeyPressed="#enterKeyAddDriver" onKeyReleased="#checkingContactNo" prefHeight="31.0" prefWidth="322.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXTextField>
+      <JFXButton fx:id="btnAddDriver" alignment="CENTER" buttonType="RAISED" layoutX="456.0" layoutY="285.0" onAction="#addDriverOnAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: linear-gradient(to left top, #1a037b, #1e218c, #25369c, #2e4baa, #3b5fb8, #3f71c4, #4783cf, #5394d9, #5ba7e4, #69baee, #7bcdf7, #90dfff); -fx-background-radius: 15;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnViewDetails" alignment="CENTER" buttonType="RAISED" layoutX="287.0" layoutY="285.0" onAction="#viewDetailsOnAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: linear-gradient(to left top, #680c32, #6f1a3d, #772649, #7d3054, #843b60, #8f486d, #9a567b, #a56388, #b7779b, #ca8caf, #dca1c3, #efb6d7); -fx-background-radius: 15;" text="View Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
